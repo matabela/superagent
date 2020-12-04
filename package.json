@@ -28,7 +28,7 @@
     "debug": "^4.1.1",
     "fast-safe-stringify": "^2.0.7",
     "form-data": "^3.0.0",
-    "formidable": "^1.2.2",
+    "formidable": "^2.0.0-canary.20200504.1",
     "methods": "^1.1.2",
     "mime": "^2.4.6",
     "qs": "^6.9.4",
@@ -76,12 +76,6 @@
     "node": ">= 7.0.0"
   },
   "homepage": "https://github.com/visionmedia/superagent",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "jsdelivr": "dist/superagent.min.js",
   "keywords": [
     "agent",
@@ -219,7 +213,8 @@
     ],
     "rules": {
       "unicorn/prevent-abbreviations": "off",
-      "node/no-unsupported-features/es-syntax": "off"
+      "node/no-unsupported-features/es-syntax": "off",
+      "prettier/prettier": ["error", { "endOfLine": "auto" }]
     },
     "globals": [
       "ActiveXObject"
